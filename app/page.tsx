@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "@/app/globals.css";
 
 export default function Home() {
   const skills = [
@@ -31,12 +32,12 @@ export default function Home() {
 
   return (
     <main className="flex flex-col w-full">
-      <header className="flex flex-col justify-center items-center py-10 bg-[#0076be] text-white">
+      <header className="text-white flex flex-col justify-center items-center py-10">
         <h1 className="text-4xl md:text-5xl">Welsh Wellness and Counseling</h1>
         <p className="text-xl mt-2">Erin Welsh, LCPC</p>
       </header>
 
-      <section className="flex flex-col lg:flex-row items-center justify-center p-8 bg-[#4db4d7]">
+      <section className="flex flex-col lg:flex-row items-center justify-center p-8">
         <div className="w-64 h-64 md:w-80 md:h-80 relative mb-6 md:mb-0 md:mr-8">
           <Image
             src="https://welsh-wellness.s3.amazonaws.com/images/headshot.JPG"
@@ -61,7 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center justify-center p-8 bg-gradient-to-b from-[#4db4d7] to-[#60a3d9]">
+      <section className="flex flex-col lg:flex-row items-center justify-center p-8">
         <div className="w-64 h-64 md:w-80 md:h-80 relative mb-6 md:mb-0 md:mr-8">
           <Image
             src="https://welsh-wellness.s3.amazonaws.com/images/fam5.jpg"
@@ -108,7 +109,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center justify-center p-8 bg-[#60a3d9]">
+      <section className="flex flex-col lg:flex-row items-center justify-center p-8">
         <div className="max-w-2xl mr-8">
           <h2 className="text-2xl font-bold mb-4 text-center">
             Services and Skills
@@ -132,7 +133,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center justify-center p-8 bg-gradient-to-b from-[#60a3d9] to-[#d5eff7]">
+      <section className="flex flex-col lg:flex-row items-center justify-center p-8">
         <div className="w-64 h-64 md:w-80 md:h-80 relative mb-6 md:mb-0 md:mr-8">
           <Image
             src="https://welsh-wellness.s3.amazonaws.com/images/e+and+j.JPG"
@@ -173,7 +174,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-8 bg-[#d5eff7]">
+      <section className="p-8">
         <h2 className="text-2xl font-bold mb-4 text-center">
           Additional Credentials
         </h2>
@@ -192,10 +193,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer
-        style={{ color: "white" }}
-        className="flex justify-center items-center h-16 bg-[#0076be]  space-x-8"
-      >
+      <footer className="flex justify-center items-center h-16 text-white space-x-8">
         <a
           href="mailto:Welshwellnessandcounseling@gmail.com"
           className="hover:underline"
